@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -31,8 +29,8 @@ function App() {
   return (
     <>
 
-      <h1 className='font-[600] text-4xl'>Vite + React</h1>
-      <form action="" className='w-full md:w-1/2 mx-auto flex flex-col gap-1.5' onSubmit={handleSubmit}>
+      <h1 className='font-[600] text-3xl text-center pt-12'>Vite + React</h1>
+      <form action="" className='w-full md:w-1/2 mx-auto flex flex-col gap-1.5' method="POST" data-netlify="true" onSubmit={handleSubmit}>
         <div className='flex flex-col gap-1'>
           <label className='font-[500]'>Full Name</label>
           <input type="text" name="fullname" id="" className='rounded border border-gray-800 outline-none py-1 px-2 shadow' onChange={handleChange} />

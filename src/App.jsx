@@ -23,7 +23,7 @@ function App() {
     fetch("/", {
       method: "POST",
       body: form
-    }).then(() => toast.success("Received, We will contact you shortly", {position: "top-center"})).catch((error) => toast.error(`Submission failed: ${error}`))
+    }).then(() => alert("Received, We will contact you shortly", {position: "top-center"})).catch((error) => alert(`Submission failed: ${error}`))
   }
 
   return (
